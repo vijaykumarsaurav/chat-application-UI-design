@@ -1,0 +1,567 @@
+<!--Mehul Thakkar -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bingoo Chat</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		<!--fonts-->
+		        
+		<!--fonts-->
+        <!--font-awsome-css-->
+           <link rel="stylesheet" href="css/font-awesome.min.css"> 
+		<!--bootstrap-->
+			<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<!--coustom css-->
+			<link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <!--component-css-->
+            
+		<!--default-js-->
+			<script src="js/jquery-2.1.4.min.js"></script>
+		<!--bootstrap-js-->
+			<script src="js/bootstrap.min.js"></script>
+		<!--script-->
+    </head>
+    <body>
+        
+        <div class="iphone-web">
+            <div class="masthead col-xs-18 pdng-stn1">
+                <div id="menu" class="panel menu-container" role="navigation">
+                    <div class="clearfix"></div>
+                    <div class="profile-pic">
+                        <img src="./images/me.jpg" alt="/" class="img-circle">
+                        <span class="glyphicon glyphicon-fire prf-fir" aria-hidden="true"></span>
+                    </div>
+                    <div class="profil-text">
+                        <h2>Mehul Thakkar</h2>
+                        <p>UI Developer</p>
+                    </div>
+                    <ul class="slide-bar-menu">>
+                        <li><a href="#"><i class="fa fa-user fa-fw mnu-icns"></i>&nbsp; Profile</a></li>
+                        <li><a href="#"><i class="fa  fa-question-circle fa-fw mnu-icns"></i>&nbsp; Help </a></li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw mnu-icns"></i>&nbsp; Settings</a></li>
+                        <li><a href="#"><i class="fa fa-info-circle fa-fw mnu-icns"></i>&nbsp; About App</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            <!--script-->
+            <script src="js/bigSlide.js"></script>
+            <script>
+            $(document).ready(function() {
+            $('.menu-link').bigSlide();
+            });
+            </script>
+            <!--script-->
+                <div class="phone-box wrap push">
+                    <div class="menu-notify">
+                        <div class="float-stn2">
+                            <a href="#menu" class="menu-link"><i style="color:#fff;" class="fa fa-bars"></i></a>
+                        </div>
+                        <div class="disc float-stn3">
+                            <h1>bingoo</h1>
+                        </div>
+                        <div class="notify float-stn2">
+                            <div class="dropdown">  
+                                <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></a>
+                                <ul class="dropdown-menu right" aria-labelledby="dropdownMenu1">
+                                   <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="nav nav-tabs menu-bar" role="tablist">
+                        <ul>
+                            <li role="presentation">
+                                <a href="#chatRoom" aria-controls="home" role="tab" data-toggle="tab">
+                                    <i class="fa fa-comments font-icons"></i>
+                                </a>
+                            </li>
+                            <li  role="presentation">
+                                <a href="#groups" aria-controls="messages" role="tab" data-toggle="tab" href="#">
+                                    <i class="fa fa-users font-icons"></i>
+                                </a>
+                            </li>
+                            <li class="active" role="presentation">
+                                <a href="#chat" aria-controls="messages" role="tab" data-toggle="tab" href="#">
+                                    <i class="fa fa-comment font-icons"></i>
+                                </a>
+                            </li>
+                            <li role="presentation">
+                                <a href="#contacts" aria-controls="messages" role="tab" data-toggle="tab" href="#">
+                                    <i class="fa fa-user font-icons"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab-content body-content">
+                        <!--Tab begins-->
+                        <div role="tabpanel" class="tab-pane" id="chatRoom">
+                            <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                             <div class="clearfix"></div>
+                            <div class="media re-media">
+                                
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Rishi</h4>
+                                <p>status goes here</p>
+                              </div>
+                              <span class="badge mov-rt">4</span>
+                            </div>
+                            <!--1-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl1.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--2-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Mehul</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--3-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl3.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Vijay</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--4-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Kishore</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--5-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Raghav</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--6-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--7-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl7.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--8-->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--1-->
+                        <div role="tabpanel" class="tab-pane" id="groups">
+                            <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Rishi group</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--1-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl1.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek group</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--2-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Mehul</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--3-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl3.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Vijay</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--4-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Kishore</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--5-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Raghav</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--6-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--7-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl7.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--8-->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--2-->
+                        <div role="tabpanel" class="tab-pane active" id="chat">
+                            <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Rishi Chat</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--1-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl1.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek chat</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--2-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Mehul</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--3-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl3.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Vijay</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--4-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Kishore</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--5-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Raghav</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--6-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--7-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl7.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--8-->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--3-->
+                       <div role="tabpanel" class="tab-pane" id="contacts">
+                           <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Rishi Contacts</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--1-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl1.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek Contacts</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--2-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Mehul</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--3-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl3.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Vijay</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--4-->
+                           <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl4.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Kishore</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--5-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Raghav</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--6-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl6.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot lt-or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--7-->
+                            <div class="media re-media">
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" src="images/thmbnl7.jpg" alt="..." />
+                                </a>
+                                <span class="on-off-dot or"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">Abhishek</h4>
+                                <p>status goes here</p>
+                              </div>
+                            </div>
+                            <!--8-->
+                            <div class="clearfix"></div>
+                        </div>
+                        <!--4-->
+                        <!--Tab Ends-->
+                    </div>
+                            
+                </div>
+            </div>
+            </div>
+            
+        <div class="clearfix"></div>
+        </div>
+    </body>
+</html>

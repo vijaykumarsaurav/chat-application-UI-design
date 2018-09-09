@@ -1,0 +1,20 @@
+                <div ng-controller='groupController' class="tab-pane" id="groups">
+                            <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                            <div class="media re-media" ng-repeat='group in groupList'>
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" ng-src={{group.userProfileImageURL}} alt="friendImage" />
+                                </a>
+                                <span ng-class="{'on-off-dot': group.availibilityStatus == 'available' ,'on-off-dot or': group.availibilityStatus == 'busy', 'on-off-dot lt-or':group.availibilityStatus == 'offline'}"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">{{group.userName}}</h4>
+                                <p>{{group.userStatus}}</p>
+                              </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>

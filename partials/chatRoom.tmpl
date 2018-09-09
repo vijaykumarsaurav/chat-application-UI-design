@@ -1,0 +1,22 @@
+<div ng-controller='chatRoomController' class="tab-pane" id="chatRoom">
+                            <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                             <div class="clearfix"></div>
+                            <div class="media re-media" ng-repeat='friend in friendsList'>
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" ng-src={{friend.userProfileImageURL}} alt="friendImage" />
+                                </a>
+                                <span ng-class="{'on-off-dot': friend.availibilityStatus == 'available' ,'on-off-dot or': friend.availibilityStatus == 'busy', 'on-off-dot lt-or':friend.availibilityStatus == 'offline'}"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">{{friend.userName}}</h4>
+                                <p>{{friend.userStatus}}</p>
+                              </div>
+                              <span class="badge mov-rt">4</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>

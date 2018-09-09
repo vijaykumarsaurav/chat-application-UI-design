@@ -1,0 +1,21 @@
+<div ng-controller='chatController' class="tab-pane active" id="chat">
+                            <div class="">
+                                <form>
+                                    <input type="text" name="s" class="textbox" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
+                                </form>
+                            </div>
+                            <div class="media re-media" ng-repeat='chat in chatList'>
+                              <div class="media-left media-middle re-media-middle image-container">
+                                <a href="#">
+                                  <img class="media-object img-circle" ng-src={{chat.userProfileImageURL}} alt="friendImage" />
+                                </a>
+                                <span ng-class="{'on-off-dot': chat.availibilityStatus == 'available' ,'on-off-dot or': chat.availibilityStatus == 'busy', 'on-off-dot lt-or':chat.availibilityStatus == 'offline'}"></span>
+                              </div>
+                              <div class="media-body re-media-body">
+                                <h4 class="media-heading">{{chat.userName}}</h4>
+                                <p>{{chat.userStatus}}</p>
+                              </div>
+                              <span class="badge mov-rt">{{chat.unreadMsg}}</span>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>

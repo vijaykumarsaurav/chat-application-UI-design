@@ -1,0 +1,118 @@
+<!--Mehul Thakkar -->
+<!DOCTYPE html>
+<html lang="en" ng-app='bingooApp'>
+    <head>
+        <title>Bingoo Chat</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function() {setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!--fonts-->
+            
+    <!--fonts-->
+        <!--font-awsome-css-->
+           <link rel="stylesheet" href="css/font-awesome.min.css"> 
+    <!--bootstrap-->
+      <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <!--coustom css-->
+      <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <!--component-css-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width" />
+   
+    </head>
+    <body>
+        <section ng-controller='mainController'>
+
+        <div class="iphone-web">
+            <div class="masthead col-xs-18 pdng-stn1">
+                <div id="menu" class="panel menu-container" role="navigation">
+                    <div class="clearfix"></div>
+                    <div class="profile-pic">
+                        <img src="./images/me.jpg" alt="/" class="img-circle">
+                        <span class="glyphicon glyphicon-fire prf-fir" aria-hidden="true"></span>
+                    </div>
+                    <div class="profil-text">
+                        <h2>Mehul Thakkar</h2>
+                        <p>UI Developer</p>
+                    </div>
+                    <ul class="slide-bar-menu">>
+                        <li><a href="profile.html"><i class="fa fa-user fa-fw mnu-icns"></i>&nbsp; Profile</a></li>
+                        <li><a href="#"><i class="fa  fa-question-circle fa-fw mnu-icns"></i>&nbsp; Help </a></li>
+                        <li><a href="#"><i class="fa fa-cog fa-fw mnu-icns"></i>&nbsp; Settings</a></li>
+                        <li><a href="#"><i class="fa fa-info-circle fa-fw mnu-icns"></i>&nbsp; About App</a></li>
+                        <div class="clearfix"></div>
+                    </ul>
+                </div>
+            <!--script-->
+            
+                <div class="phone-box wrap push">
+                    <div class="menu-notify">
+                        <div class="float-stn2">
+                            <a href="#menu" class="menu-link"><i style="color:#fff;" class="fa fa-bars"></i></a>
+                        </div>
+                        <div class="disc float-stn3">
+                            <h1>bingoo</h1>
+                        </div>
+                        <div class="notify float-stn2">
+                            <div class="dropdown">  
+                                <a href="#" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><i class="fa fa-ellipsis-v"></i></a>
+                                <ul class="dropdown-menu right" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Action</a></li>
+                                    <li><a href="#">Another action</a></li>
+                                    <li><a href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="nav nav-tabs menu-bar" role="tablist">
+                        <ul>
+                            <li ng-class="{'active': activeTab ==='chatRoom'}">
+                                <a href="#chatRoom">
+                                    <i class="fa fa-comments font-icons"></i>
+                                </a>
+                            </li>
+                            <li ng-class="{'active': activeTab ==='group'}">
+                                <a href="#groups" >
+                                    <i class="fa fa-users font-icons"></i>
+                                </a>
+                            </li>
+                            <li ng-class="{'active': activeTab ==='chat'}">
+                                <a href="#chat">
+                                    <i class="fa fa-comment font-icons"></i>
+                                </a>
+                            </li>
+                            <li ng-class="{'active': activeTab ==='contact'}">
+                                <a href="#contacts">
+                                    <i class="fa fa-user font-icons"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="tab-content body-content">
+                    <section ng-view>
+            
+                    </section>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            
+        <div class="clearfix"></div>
+        </div>
+
+        </section>
+
+         <!--default-js-->
+      <script src="js/jquery-2.1.4.min.js"></script>
+    <!--bootstrap-js-->
+      <script src="js/bootstrap.min.js"></script>
+    <!--script-->
+     <script type="text/javascript" src="js/angular.min.js"></script>
+     <script src="js/angular-route.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    </body>
+</html>
